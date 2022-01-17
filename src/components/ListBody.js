@@ -2,7 +2,6 @@ import {useEffect} from 'react'
 import ListItem from './ListItem';
 import { IoIosClose } from "react-icons/io";
 
-
 const ListBody = ({item, setItem, editId, list, setList, isEditing, setIsEditing, setEditId}) => {
     const removeItem = (id) => {
         setList(list.filter(singleItem => singleItem.id !== id))
@@ -53,8 +52,7 @@ const ListBody = ({item, setItem, editId, list, setList, isEditing, setIsEditing
                     <ListItem editItem={editItem} removeItem={removeItem} {...itm} />
                 ))}
             </ul>
-            {list.length > 0 && <button className='mt-10 btn' onClick={() => clearAll()}>Clear All Items <IoIosClose style={{fontSize: '1rem'}} /></button>
-}
+            {list.length > 0 && <button className='mt-10 btn' onClick={() => clearAll()}>Clear All Items <IoIosClose style={{fontSize: '1rem'}} /></button>}
         </main>
     )
 }
