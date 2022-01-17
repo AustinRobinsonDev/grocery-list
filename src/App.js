@@ -4,9 +4,17 @@ import Navbar from './layout/Navbar'
 import Footer from './layout/Footer'
 import ListBody from './components/ListBody'
 
+const getStorage = () => {
+  let list = localStorage.getItem('list');
+  if(list) {
+    return JSON.parse(localStorage.getItem('list'));
+  } else {
+    return [];
+  }
+}
 function App() {
-  const [list, setList] = useState([])
-  const [item, setItem] = useState('');
+  const [list, setList] = useState(getStorage())
+  const [item, setItem] = useState('')
   const [isEditing, setIsEditing] = useState(false)
   const [editId, setEditId] = useState(null)
   const [alert, setAlert] = useState({
@@ -17,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <ListBody list={list} setList={setList} item={item} setItem={setItem} />
+      <ListBody setEditId={setEditId} editId={editId} setIsEditing={setIsEditing} isEditing={isEditing} list={list} setList={setList} item={item} setItem={setItem} />
       <Footer list={list} />
     </div>
   );

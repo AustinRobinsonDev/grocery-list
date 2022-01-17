@@ -4,14 +4,92 @@
   font-family: 'Montserrat', sans-serif;
   font-family: 'Source Code Pro', monospace;
   font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
   margin: 0;
   padding: 0;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+  align-self: flex-end;
+  justify-self: flex-start;
+}
+main h1 {
+  font-size: 4rem;
+}
+
+.mt-10 {
+  margin: 10px 0;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+
+input {
+  height: 30px;
+  width:300px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  border-right: 0px;
+}
+
+.bdr-l-none {
+  border-left: none;
+}
+
+.danger {
+  font-size: 2rem;
+  box-sizing: border-box;  
+background-color: tomato;
+min-width: 30px;
+height: 35px;
+
+border: 1px solid rgba(0, 0, 0, 0.205);
+border-radius: 5px;
+}
+
+.success {
+  font-size: 2rem;
+  box-sizing: border-box;
+background-color: green;
+min-width: 30px;
+height: 35px;
+
+border: 1px solid rgba(0, 0, 0, 0.205);
+border-radius: 5px;
+}
+.edit {
+  font-size: 2rem;
+  box-sizing: border-box;
+  background-color: orange;
+  min-width: 30px;
+  height: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  border-radius: 5px;
+}
+.btn-connect {
+  background-color: hsla(157, 61%, 39%, 0.822);
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  width: fit-content;
+  height: 30px;
+  padding: 5px;
+  border-radius: 0 5px 5px 0;
+}
+
+.btn {
+  background-color: hsla(157, 61%, 39%, 0.822);
+  min-width: 50px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  border-radius: 5px;
 }
 
 .App {
   max-width: 100vw;
   min-height: 100vh;
-  background-color: beige;
+  background-color: hsl(0, 0%, 95%);
   box-sizing: border-box;
 }
 
@@ -44,4 +122,37 @@
   position: sticky;
   top: 0;
   z-index: 99;
+}
+
+.list-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5rem auto;
+  box-sizing: border-box;
+  width: 500px;
+  padding: 2.5rem;
+  background-color: white;
+  box-shadow: 0px 1px 7px 4px rgba(65, 65, 65, 0.432);
+  border-radius: 7px;
+  border: none;
+}
+
+.list-item {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 22.5rem;
+  text-decoration: none;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 375px;
 }
