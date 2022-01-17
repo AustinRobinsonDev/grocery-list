@@ -53,7 +53,8 @@ const ListBody = ({item, setItem, editId, list, setList, isEditing, setIsEditing
                     <ListItem editItem={editItem} removeItem={removeItem} {...itm} />
                 ))}
             </ul>
-            <button className='mt-10 btn' onClick={() => clearAll()}>Clear Items <IoIosClose style={{fontSize: '1rem'}} /></button>
+            {list.length > 0 && <button className='mt-10 btn' onClick={() => clearAll()}>Clear All Items <IoIosClose style={{fontSize: '1rem'}} /></button>
+}
         </main>
     )
 }

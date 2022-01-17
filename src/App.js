@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import './App.css';
+import Alert from './components/Alert'
 import Navbar from './layout/Navbar'
 import Footer from './layout/Footer'
 import ListBody from './components/ListBody'
@@ -25,6 +26,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      {alert.show && <Alert {...alert} />}
       <ListBody setEditId={setEditId} editId={editId} setIsEditing={setIsEditing} isEditing={isEditing} list={list} setList={setList} item={item} setItem={setItem} />
       <Footer list={list} />
     </div>
