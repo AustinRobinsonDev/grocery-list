@@ -41,7 +41,7 @@ input {
 .danger {
   font-size: 2rem;
   box-sizing: border-box;  
-background-color: tomato;
+background-color: rgb(248, 56, 23);
 min-width: 30px;
 height: 35px;
 
@@ -52,7 +52,8 @@ border-radius: 5px;
 .success {
   font-size: 2rem;
   box-sizing: border-box;
-background-color: green;
+  background-color: hsla(157, 61%, 39%, 0.822);
+
 min-width: 30px;
 height: 35px;
 
@@ -62,7 +63,7 @@ border-radius: 5px;
 .edit {
   font-size: 2rem;
   box-sizing: border-box;
-  background-color: orange;
+  background-color: rgb(214, 140, 3);
   min-width: 30px;
   height: 35px;
   border: 1px solid rgba(0, 0, 0, 0.205);

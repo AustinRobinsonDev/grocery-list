@@ -54,7 +54,7 @@ const ListBody = ({item, alert, setAlert, setItem, editId, list, setList, isEdit
             {alert.show ? <Alert removeAlert={showAlert} {...alert} /> : <div className='height'></div>}
             <h1 className='mt-10'>Grocery List</h1>
             <section className='mt-10'>
-                <input type="text" onChange={(e) => setItem(e.target.value)} value={item}/> 
+                <input placeholder='Milk...' type="text" onChange={(e) => setItem(e.target.value)} value={item}/> 
                 <button className='btn-connect bdr-l-none' onClick={handleClick}>{isEditing ? 'Save' : 'Add Item'}</button>
             </section>
             <ul className='mt-10 list-container'>
