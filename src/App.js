@@ -13,7 +13,7 @@ const getStorage = () => {
   }
 }
 function App() {
-  // comment
+  // comment change
   const [list, setList] = useState(getStorage())
   const [item, setItem] = useState('')
   const [isEditing, setIsEditing] = useState(false)
