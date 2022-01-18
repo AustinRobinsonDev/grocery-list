@@ -16,6 +16,8 @@ const ListBody = ({item, alert, setAlert, setItem, editId, list, setList, isEdit
     }
     const clearAll = () => {
         setList([]);
+        showAlert(true, 'danger', 'All items deleted!');
+
     }
     const showAlert = (show=false, type='',msg='') => {
         setAlert({show, type, msg});
