@@ -20,8 +20,8 @@ function App() {
   const [editId, setEditId] = useState(null)
   const [alert, setAlert] = useState({
     show: false,
-    msg: 'Error',
-    type: 'success'
+    msg: '',
+    type: ''
   })
   return (
     <div className="App">
